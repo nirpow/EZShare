@@ -1,8 +1,8 @@
 # EZShare
 Android self project
-![](pics/1.gif)
-
-![](pics/2.gif)
-![](pics/3.gif)
-![](pics/4.gif)
+<br/>
+![](pics/1.gif)<br/>
+![](pics/2.gif)<br/>
+![](pics/3.gif)<br/>
+![](pics/4.gif)<br/>
 ![](pics/5.gif)
