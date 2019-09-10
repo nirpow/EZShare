@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchFragment"
+    android:background="@color/colorPrimary">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/icon_ppl_gruop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_people_g_black_24dp"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:layout_margin="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="52dp"
+            android:background="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="@drawable/white_gray_border_btn"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint="Search"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</RelativeLayout>
+
+</FrameLayout>

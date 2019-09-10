@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">EZShare</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="passwords">Passwords</string>
+    <string name="policy_agreement">By clicking Join now, you agree to EZShare\'s user agreement privacy policy and Cookie Policy, you might get Text Notification.</string>
+    <string name="join_now">Join Now</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="please_wait">Please wait…</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="upload">Upload</string>
+    <string name="profile">Profile</string>
+    <string name="enter_caption">Enter Caption</string>
+    <string name="likes">Likes</string>
+</resources>

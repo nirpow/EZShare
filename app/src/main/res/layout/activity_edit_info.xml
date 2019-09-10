@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/top_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btn_update"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Done"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/start_btn"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/top_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="top"
+            android:id="@+id/sec_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_image_review"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_border_width="0.5dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_margin="25dp"
+                android:text="Change Profile Photo"
+                android:textColor="@color/link_blue_darker"
+                android:id="@+id/btn_from_phone_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/conslayout"
+            android:background="@color/colorwhite"
+            android:layout_below="@id/sec_lin"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:text="About"/>
+            <EditText
+                android:id="@+id/et_about_edit"
+                android:hint="About"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_about"
+                />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv_user_name"
+                android:layout_below="@+id/et_about_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:text="User Name"/>
+
+            <EditText
+                android:id="@+id/et_username_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user_name"
+                android:hint="Username" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
